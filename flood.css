@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(5, 9, 36, 0.7)),url(https://img.freepik.com/free-photo/natural-disaster-concept-with-flood_23-2150385394.jpg?t=st=1699687946~exp=1699691546~hmac=0fe8da819d80366cb59df4db84fc86acb921b02572ee89af6a799a32573a6fa1&w=1380);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.header img:hover{
+    transform: scale(1.1);
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;    
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: skyblue;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%; 
+}
+
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+.text-box h1:hover{
+    background: none;
+    color: #ff6348;
+    transform: scale(1.1);
+}
+.text-box p{
+    margin: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(127, 240, 255);
+    border: 1px solid white;
+    padding: 13px 34px;
+    background: transparent;
+    position:relative;
+    cursor: pointer;
+}
+
+.btn:hover{
+    border:1px solid rgb(0, 78, 156);
+    background:rgb(0, 77, 128);
+    transition: 1s;
+}
+         /*--------------------intro-------------------------*/
+.intro{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+p{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 0;
+}
+
+/*----------Types----------*/
+
+.types{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+.types-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.types-col img{
+    border-radius: 10px;
+    width:40%;
+}
+
+.types-col p{
+    padding: 0;
+}
+
+.types-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/*--------------Causes------------*/
+
+.cause{
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+.cause-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: absolute;
+    overflow: hidden;
+
+}
+.cause-col img{
+ object-fit: cover;
+ width: 400px;
+ height: 550px;
+ margin-right: 10px;
+ border-radius: 10px;
+}
+
+.layer{
+    background:transparent;
+    height: 550px;
+    width: 400px;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.layer:hover{
+    background:     rgba(10, 239, 235, 0.6);
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: black;
+    font-size: 26px;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*------------------Precautions----------------*/
+.pre{
+    width: 100%;
+}
+
+#precautions-container {
+    width: 60%;
+    margin-right: 20%;
+    margin:5%;
+}
+
+#precautions-list {
+    list-style-type: disc;
+    
+    
+}
+
+.precaution-item {
+    margin-bottom: 10px;
+    display:list-item;
+    font-size:large;
+}
+/*--------------NEWS-------------------------*/
+.NEWS{
+    display: flex;
+}
+.news{
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+    margin-right: 15px;
+    padding: 10px;
+    margin-left: 60px;
+}
+.NEWS1{
+    display: flex;
+}
+.news1{
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+    margin-right: 15px;
+    padding: 10px;
+    margin-left: 60px;
+}
+.news:hover{
+    box-shadow: 1px 1px 8px  black;
+    background-color: whitesmoke;
+    transform: translate(-2px);
+}
+.News{
+    width: 360px;
+    min-height: 400px;
+}
+
+.news1:hover{
+    color: red;
+}
+.news2{
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+    margin-right: 15px;
+    padding: 10px;
+    margin-left: 60px;
+}
+/*----------------------------------------------------CONTACT-------------------------------------------------------------------*/
+.contact-info{
+    margin: 0;
+    padding: 0;
+}
+.CONTACT{
+    background:  #f1f1f1;
+    min-height: 50vh;
+}
+.contact-info{
+    align-items: center;
+    justify-content:center;
+    text-indent:center;
+    margin-top: 10vh;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 60px;
+    display: flex;
+}
+.card {
+    background:#404246;
+    padding: 0 40px;
+    margin: 0 10px;
+    width: calc(33%-20px);
+    height: 200px;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items:center;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5%;
+    transition: 0.3 linear;
+
+}
+.card-icon {
+    font-size: 28px;
+    background:#043057;
+    width: 60px;
+    height: 60px;
+    text-align:center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.3 linear;
+}
+.card:hover .card-icon{
+    background: none;
+    color: #ff6348;
+    transform: scale(1.5);
+}
+.card:hover{
+    transform: scale(1.1);
+}
